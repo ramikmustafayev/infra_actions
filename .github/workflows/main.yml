@@ -23,7 +23,7 @@ jobs:
         cd infra_project
         python manage.py tests
   build_and_push_to_docker_hub:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: tests
     steps:
       - name: Check out the repo
